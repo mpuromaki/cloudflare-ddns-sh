@@ -1,0 +1,9 @@
+[Unit]
+Description=Cloudflare DDNS timer
+
+[Timer]
+OnUnitActiveSec=12h
+OnBootSec=3min
+
+[Install]
+WantedBy=timers.target
