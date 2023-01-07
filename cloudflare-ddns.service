@@ -1,4 +1,4 @@
-Description=Cloudflare DDNS, update your dynamic ip to DNS A record.
+Description=Cloudflare DDNS updater
 
 [Service]
 Type=oneshot
