@@ -1,0 +1,8 @@
+Description=Cloudflare DDNS, update your dynamic ip to DNS A record.
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /usr/local/sbin/cloudflare-ddns
+
+[Install]
+WantedBy=network-online.target
