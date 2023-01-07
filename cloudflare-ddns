@@ -48,4 +48,4 @@ echo "DNSrecordid for $dnsrecord is $dnsrecordid"
 curl -s -X PUT "https://api.cloudflare.com/client/v4/zones/$zoneid/dns_records/$dnsrecordid" \
   -H "Authorization: Bearer $cloudflare_bearer_token" \
   -H "Content-Type: application/json" \
-  --data "{\"type\":\"A\",\"name\":\"$dnsrecord\",\"content\":\"$ip\",\"ttl\":1,\"proxied\":false}" | jq
+  --data "{\"type\":\"A\",\"name\":\"$dnsrecord\",\"content\":\"$ip\",\"ttl\":1,\"proxied\":true}" | jq
